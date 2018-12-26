@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="178dp">
+
+        <View
+            android:id="@+id/topSaparator"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorlightblue"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/tvHeaderTitle"
+            android:textSize="14sp"
+            android:layout_below="@+id/topSaparator"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorlightblue"
+            android:text="Horizontal Component Title"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@+id/flayout"
+            android:layout_below="@+id/tvHeaderTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:background="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"/>
+
+
+        </FrameLayout>
+
+        <View
+            android:id="@+id/midSaparator"
+            android:layout_below="@+id/flayout"
+            android:background="@color/colorlightblue"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+        <TextView
+            android:id="@+id/tvFooterTitle"
+            android:textStyle="normal"
+            android:textSize="14dp"
+            android:layout_below="@+id/midSaparator"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorPrimary"
+            android:text="View All"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:id="@+id/bottomSaparator"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorlightblue"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

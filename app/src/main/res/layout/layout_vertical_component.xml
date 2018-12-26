@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <View
+            android:id="@+id/topSaparator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorlightblue" />
+
+        <RelativeLayout
+            android:id="@+id/rlTopLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topSaparator"
+            android:padding="3dp">
+
+            <TextView
+                android:id="@+id/tvHeaderTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Vertical Component Title"
+                android:textColor="@color/colorlightblue"
+                android:textSize="14dp" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/midSaparator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/rlTopLayout"
+            android:background="@color/colorlightblue" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/midSaparator"
+            android:scrollbars="vertical" />
+
+        <View
+            android:id="@+id/bottomSaparator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorlightblue"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
