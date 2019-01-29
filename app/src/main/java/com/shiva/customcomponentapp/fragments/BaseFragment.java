@@ -4,7 +4,6 @@ import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.shiva.customcomponentapp.MainActivity;
 import com.shiva.customcomponentapp.customviews.HorizontalComponent;
 import com.shiva.customcomponentapp.customviews.VerticalComponent;
 import com.shiva.customcomponentapp.datasources.AlbumEntity;
@@ -12,6 +11,7 @@ import com.shiva.customcomponentapp.datasources.ArtistEntity;
 import com.shiva.customcomponentapp.datasources.AudiobookEntity;
 import com.shiva.customcomponentapp.datasources.BaseEntity;
 import com.shiva.customcomponentapp.datasources.PlaylistEntity;
+import com.shiva.customcomponentapp.datasources.SongEntity;
 import com.shiva.customcomponentapp.datasources.VideoEntity;
 
 import java.util.ArrayList;
@@ -49,7 +49,7 @@ public class BaseFragment extends Fragment implements HorizontalComponent.OnHori
 
     @Override
     public void onSongsMenuClick(VerticalComponent.SectionType sectionType, BaseEntity baseEntity, int position) {
-        Log.d(TAG, "onSongsMenuClick: called : sectionType " + sectionType);
+        Log.d(TAG, "onSongsMenuClick: called : sectionType " + sectionType  + " position:- " + position);
     }
 
     @Override
@@ -110,6 +110,16 @@ public class BaseFragment extends Fragment implements HorizontalComponent.OnHori
         list.add(new PlaylistEntity("Song 3", "3"));
         list.add(new PlaylistEntity("Song 4", "4"));
         list.add(new PlaylistEntity("Song 5", "5"));
+        return list;
+    }
+
+    public List<BaseEntity> setSongData() {
+        List<BaseEntity> list = new ArrayList<>();
+        list.add(new SongEntity("Song 1", "1"));
+        list.add(new SongEntity("Song 2", "2"));
+        list.add(new SongEntity("Song 3", "3"));
+        list.add(new SongEntity("Song 4", "4"));
+        list.add(new SongEntity("Song 5", "5"));
         return list;
     }
 }

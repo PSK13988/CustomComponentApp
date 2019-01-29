@@ -40,8 +40,8 @@ public class MainActivityFragment extends BaseFragment {
         mHorizontalComponent.setOnHorizontalEventListener(this, HorizontalComponent.SectionType.ALBUM_SECTION, HorizontalComponent.SectionIndex.DEFAULT);
 
         mVerticalComponent.setHeaderTitle("Vertical Component Title");
+        mVerticalComponent.setBaseList(setSongData());
         mVerticalComponent.setVerticalEventListener(this, VerticalComponent.Options.OFF, VerticalComponent.SectionType.SONG_LIST);
-        mVerticalComponent.setBaseList(setPlaylistData());
 
     }
 }

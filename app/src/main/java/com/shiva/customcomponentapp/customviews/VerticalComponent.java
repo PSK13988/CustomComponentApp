@@ -22,6 +22,7 @@ import com.shiva.customcomponentapp.datasources.AlbumEntity;
 import com.shiva.customcomponentapp.datasources.ArtistEntity;
 import com.shiva.customcomponentapp.datasources.BaseEntity;
 import com.shiva.customcomponentapp.datasources.PlaylistEntity;
+import com.shiva.customcomponentapp.datasources.SongEntity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -216,6 +217,23 @@ public class VerticalComponent extends RelativeLayout {
                         holder.ivContent.setImageResource(R.drawable.ic_playlist_play);
                         holder.tvContentTitle.setText(((ArrayList<PlaylistEntity>) baseList).get(position).getTitle());
                         holder.tvContentDesc.setText(((ArrayList<PlaylistEntity>) baseList).get(position).getDescription());
+
+                        holder.ivMenu.setOnClickListener(new OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                if (verticalEventListener != null) {
+                                    verticalEventListener.onSongsMenuClick(sectionType, baseList.get(position), position);
+                                }
+                            }
+                        });
+                    }
+                    break;
+
+                case SONG_LIST:
+                    if (baseList != null && !baseList.isEmpty() && baseList.size() > 0) {
+                        holder.ivContent.setImageResource(R.drawable.ic_music_note);
+                        holder.tvContentTitle.setText(((ArrayList<SongEntity>) baseList).get(position).getTitle());
+                        holder.tvContentDesc.setText(((ArrayList<SongEntity>) baseList).get(position).getDescription());
 
                         holder.ivMenu.setOnClickListener(new OnClickListener() {
                             @Override
