@@ -23,6 +23,7 @@
             android:textColor="@color/colorlightblue"
             android:text="Horizontal Component Title"
             android:layout_marginTop="5dp"
+            android:gravity="center"
             android:layout_marginBottom="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />

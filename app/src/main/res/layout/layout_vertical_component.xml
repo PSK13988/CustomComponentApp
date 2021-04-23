@@ -3,40 +3,37 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:background="@android:color/white">
 
         <View
             android:id="@+id/topSaparator"
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:layout_alignParentTop="true"
             android:background="@color/colorlightblue" />
 
-        <RelativeLayout
+        <LinearLayout
             android:id="@+id/rlTopLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/topSaparator"
             android:padding="3dp">
 
             <TextView
                 android:id="@+id/tvHeaderTitle"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_centerVertical="true"
                 android:layout_marginBottom="5dp"
-                android:layout_marginLeft="5dp"
+                android:gravity="center"
                 android:layout_marginTop="5dp"
                 android:text="Vertical Component Title"
                 android:textColor="@color/colorlightblue"
                 android:textSize="14dp" />
 
 
-        </RelativeLayout>
+        </LinearLayout>
 
         <View
             android:id="@+id/midSaparator"
@@ -59,6 +56,6 @@
             android:background="@color/colorlightblue"
             android:visibility="gone" />
 
-    </RelativeLayout>
+    </LinearLayout>
 
 </RelativeLayout>

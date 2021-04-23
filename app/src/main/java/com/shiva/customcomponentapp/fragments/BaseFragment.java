@@ -60,66 +60,31 @@ public class BaseFragment extends Fragment implements HorizontalComponent.OnHori
 
     public List<BaseEntity> setAlbumData() {
         List<BaseEntity> list = new ArrayList<>();
-        list.add(new AlbumEntity("Album One", "1"));
-        list.add(new AlbumEntity("Album Two", "2"));
-        list.add(new AlbumEntity("Album Three", "3"));
-        list.add(new AlbumEntity("Album Four", "4"));
-        list.add(new AlbumEntity("Album Five", "5"));
-        list.add(new AlbumEntity("Album Six", "6"));
-        list.add(new AlbumEntity("Album Seven", "7"));
-        list.add(new AlbumEntity("Album Eight", "8"));
-        list.add(new AlbumEntity("Album Nine", "9"));
-        list.add(new AlbumEntity("Album Ten", "10"));
-        return list;
-    }
-
-    public List<BaseEntity> setArtistData() {
-        List<BaseEntity> list = new ArrayList<>();
-        list.add(new ArtistEntity("Artist One", "1"));
-        list.add(new ArtistEntity("Artist Two", "2"));
-        list.add(new ArtistEntity("Artist Three", "3"));
-        list.add(new ArtistEntity("Artist Four", "4"));
-        list.add(new ArtistEntity("Artist Five", "5"));
-        return list;
-    }
-
-    public List<BaseEntity> setAudiobookData() {
-        List<BaseEntity> list = new ArrayList<>();
-        list.add(new AudiobookEntity("Audiobook One", "1"));
-        list.add(new AudiobookEntity("Audiobook Two", "2"));
-        list.add(new AudiobookEntity("Audiobook Three", "3"));
-        list.add(new AudiobookEntity("Audiobook Four", "4"));
-        list.add(new AudiobookEntity("Audiobook Five", "5"));
-        return list;
-    }
-
-    public List<BaseEntity> setVideoData() {
-        List<BaseEntity> list = new ArrayList<>();
-        list.add(new VideoEntity("Video One", "1"));
-        list.add(new VideoEntity("Video Two", "2"));
-        list.add(new VideoEntity("Video Three", "3"));
-        list.add(new VideoEntity("Video Four", "4"));
-        list.add(new VideoEntity("Video Five", "5"));
-        return list;
-    }
-
-    public List<BaseEntity> setPlaylistData() {
-        List<BaseEntity> list = new ArrayList<>();
-        list.add(new PlaylistEntity("Song 1", "1"));
-        list.add(new PlaylistEntity("Song 2", "2"));
-        list.add(new PlaylistEntity("Song 3", "3"));
-        list.add(new PlaylistEntity("Song 4", "4"));
-        list.add(new PlaylistEntity("Song 5", "5"));
+        list.add(new AlbumEntity("Item One", "1"));
+        list.add(new AlbumEntity("Item Two", "2"));
+        list.add(new AlbumEntity("Item Three", "3"));
+        list.add(new AlbumEntity("Item Four", "4"));
+        list.add(new AlbumEntity("Item Five", "5"));
+        list.add(new AlbumEntity("Item Six", "6"));
+        list.add(new AlbumEntity("Item Seven", "7"));
+        list.add(new AlbumEntity("Item Eight", "8"));
+        list.add(new AlbumEntity("Item Nine", "9"));
+        list.add(new AlbumEntity("Item Ten", "10"));
         return list;
     }
 
     public List<BaseEntity> setSongData() {
         List<BaseEntity> list = new ArrayList<>();
-        list.add(new SongEntity("Song 1", "1"));
-        list.add(new SongEntity("Song 2", "2"));
-        list.add(new SongEntity("Song 3", "3"));
-        list.add(new SongEntity("Song 4", "4"));
-        list.add(new SongEntity("Song 5", "5"));
+        list.add(new SongEntity("Item One", "1"));
+        list.add(new SongEntity("Item Two", "2"));
+        list.add(new SongEntity("Item Three", "3"));
+        list.add(new SongEntity("Item Four", "4"));
+        list.add(new SongEntity("Item Five", "5"));
+        list.add(new SongEntity("Item Six", "6"));
+        list.add(new SongEntity("Item Seven", "7"));
+        list.add(new SongEntity("Item Eight", "8"));
+        list.add(new SongEntity("Item Nine", "9"));
+        list.add(new SongEntity("Item Ten", "10"));
         return list;
     }
 }
